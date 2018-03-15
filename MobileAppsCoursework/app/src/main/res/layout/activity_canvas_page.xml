@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.napier.mobileappsdevcw1.CanvasPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewCanvas"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="false"
+            android:onClick="canvasClick"
+            android:scaleType="fitCenter"
+            android:scrollbars="horizontal"
+            app:srcCompat="@android:color/background_light" />
+
+        <ImageView
+            android:id="@+id/imageViewOverlay"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="false"
+            android:onClick="canvasClick"
+            android:scaleType="fitCenter"
+            android:scrollbars="horizontal"
+            app:srcCompat="@android:color/background_light" />
+
+        <com.stfalcon.multiimageview.MultiImageView
+            android:id="@+id/multiImageView"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:onClick="canvasClick"
+            android:scaleType="fitCenter"
+            android:scrollbars="horizontal"
+            app:srcCompat="@android:color/background_light"
+            />
+
+
+        <Button
+            android:id="@+id/BT_ModeDraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/BT_SaveImage"
+            android:layout_alignStart="@+id/imageViewCanvas"
+            android:layout_marginBottom="77dp"
+            android:text="Draw Mode" />
+
+        <Button
+            android:id="@+id/BT_ModeMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/BT_ModeDraw"
+            android:layout_alignBottom="@+id/BT_ModeDraw"
+            android:layout_toEndOf="@+id/BT_SwitchTarget"
+            android:text="Move Mode" />
+
+        <Button
+            android:id="@+id/BT_SwitchTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/BT_SaveImage"
+            android:layout_alignStart="@+id/BT_ModeDraw"
+            android:text="SwitchTarget" />
+
+        <Button
+            android:id="@+id/BT_DeleteSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageViewCanvas"
+            android:layout_alignTop="@+id/BT_ModeMove"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/BT_SaveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="19dp"
+            android:text="Save" />
+
+        <EditText
+            android:id="@+id/commentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/BT_ModeMove"
+            android:layout_alignStart="@+id/BT_ModeDraw"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

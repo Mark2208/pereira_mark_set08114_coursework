@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MobileAppsDevCw1</string>
+    <string name="title_activity_image_select">ImageSelect</string>
+    <string name="about_text">
+        "Designed and Developed by Mark Pereira for the Mobile Applications Development SET08114 Coursework."
+        "This is a Prototype version. Some features designed/expected in the report may not be available in this Version.\n\n"
+
+        "Usage: Simply select an Image from the Library. When it opens, enter a comment in the TextBox, and tap the Canvas to add it on Screen.\n"
+        "Tap 'Switch User' when working with multiple Comments to Switch Between them. Then, type 'Move Mode' or 'Delete' to delete the Selected Image."
+        "Drawing/Font styles and sizes are not available in this version, as specified in the Report.\n\n"
+
+        "Gallery/Image Browser is not available. You can only select images from a static Library."
+        "Saving/Exporting images does not function, although the code has been developed. This will be further investigated."
+
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>
